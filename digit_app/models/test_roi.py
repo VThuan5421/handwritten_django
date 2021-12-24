@@ -1,3 +1,4 @@
+"""
 import matplotlib.pyplot as plt
 import cv2
 import numpy as np
@@ -51,3 +52,4 @@ def save_some_mnist():
     print("Done!")
 
 #save_some_mnist()
+"""

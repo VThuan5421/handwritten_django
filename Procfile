@@ -1,1 +1,1 @@
-web: gunicorn digit_system.wsgi --log-file -
+web: gunicorn digit_system.wsgi

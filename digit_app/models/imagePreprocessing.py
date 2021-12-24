@@ -1,5 +1,5 @@
 # Scale image
-
+"""
 import cv2
 import numpy as np
 from PIL import Image
@@ -386,3 +386,4 @@ print('Equivalent Diameter: {}'.format(equi_diameter))
 
 # Hướng Orientation
 
+"""

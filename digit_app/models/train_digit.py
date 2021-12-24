@@ -1,3 +1,4 @@
+"""
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, MaxPooling2D, Dropout, Flatten, Conv2D
@@ -56,3 +57,4 @@ print("Model saved succesfully.")
 
 # Please cd to ./path/to/models and run file train_model.py: python train_model.py
 
+"""

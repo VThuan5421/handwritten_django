@@ -1,3 +1,4 @@
+"""
 path = "c:/vs_data/handwritten/A_Z Handwritten Data.csv" # Absolute path
 # download: https://www.kaggle.com/sachinpatel21/az-handwritten-alphabets-in-csv-format
 
@@ -72,8 +73,7 @@ model.save('alphabetmodel.h5')
 score = model.evaluate(x_test, y_test_one)
 print("Loss: ", score[0])
 print("Accuracy: ", score[1])
-
-
+"""
 
 
 
