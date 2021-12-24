@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ['handwrittendjango.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +45,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleWare',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -133,7 +131,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'digit_app/static')]
 MODELS_ROOT = os.path.join(BASE_DIR, 'digit_app/models')
 MODELS_URL = '/models/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
