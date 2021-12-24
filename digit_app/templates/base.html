@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,500&display=swap" rel="stylesheet">
+    <!-- end google font-->
+    <title>{% block title %}{% endblock %}</title>
+    {% block css %}
+    {% endblock %}
+    <link rel = "stylesheet" href = "/static/css/style.css">
+</head>
+<body>
+<header class = "header">
+    <div class = "container-fluid">
+        <div class = "header-content">
+            <div class = "header-left">
+                <div class = "main-logo">
+                    <a href = "/" class = "logo">Working</a>
+                </div>
+            </div>
+            <div class = "header-right">
+                <div class = "item">
+                    <a class = "item-link" href = "/canvas_digit">Canvas</a>
+                </div>
+                <div class = "item">
+                    <a class = "item-link" href = "/image_digit">Digit</a>
+                </div>
+                <div class = "item">
+                    <a class = "item-link" href = "/image_alphabet">Alphabet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% block body %}
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+</body>
+</html>

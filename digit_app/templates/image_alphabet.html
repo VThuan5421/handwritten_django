@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Image Predict{% endblock %}
+{% block body %}
+<div class = "image-predict padding-bottom">
+    <div class = "container">
+        <h2 class = "center">Alphabet Prediction</h2>
+        <div class = "result-content">
+            <h3>
+                <i>Word: {% if word %}{{word}}{% else %}None{% endif %}</i>
+                <i>Accuracy: {% if acc %}{{acc}}{% else %}None{% endif %}</i>
+            </h3>
+        </div>
+        <div class = "body-content">
+            <div class = "image-content center">
+                <img id = "output" width = "200">
+                
+                <form class = "upload_form" method = "POST" enctype = "multipart/form-data">
+                    {% csrf_token %}
+                    <div class = "form-group">
+                        <input type = "file" accept = "image/jpeg, image/png" onchange="loadFile(event)" name = "file" id = "file" style = "display: none;" required>
+                        <label for="file" style = "cursor: pointer;" class = "image-chosen">Upload Image</label>
+                    </div>
+                    <button type = "submit" onclick = "message()" class = "btn btn-submit">Predict</button>
+                </form>
+                <button onclick="clearImage()" class = "btn btn-rm">Clear Image</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src = "../static/js/script.js"></script>
+<script>
+    function clearImage() {
+	    //document.getElementById('output').removeAttribute('src');
+        document.getElementById('output').src = null;
+    };
+    function message() {
+        alert("The image will disappear after pressing the predict button.");
+    }
+</script>
+{% endblock %}

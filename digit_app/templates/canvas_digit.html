@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Canvas Prediction{% endblock %}
+{% block body %}
+<div class = "image-predict">
+<div class = "container">
+    <h3 class = "center">This function is not available.</h3>
+    <div class = "result-content">
+        <h3>
+            <i>Class: {% if digit %}{{digit}}{% else %}None{% endif %}</i>
+            <i>Accuracy: {% if acc %}{{acc}}{% else %}None{% endif %}</i>
+        </h3>
+    </div>
+    <div class = "body-content">
+        <!--<h4 class = "center">Draw a digit on Canvas and then Press Predict button.</h4>-->
+        <div class = "canvas-content">
+            <canvas id="canvas" width="300" height="300" style="border:1px solid"></canvas>
+            <div class = "center">
+                <button onclick="clearCanvas()" id = "clear" class = "btn btn-clear remove">Clear Canvas</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src = "../static/js/script.js"></script>
+{% endblock %}
