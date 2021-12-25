@@ -14,4 +14,8 @@ A simple CNN (Convolutional Neural Network) predicts images containing handwritt
 - pip install requirements.txt
 6. **Run server**
 - python manage.py runserver
- 
+#### Some images for prediction in static/images folder. But you can download any images in google to predict.
+![Screenshot](static/images/screen1.png)
+![Screenshot](static/images/screen2.png)
+![Screenshot](static/images/screen3.png)
+![Screenshot](static/images/screen4.png)
