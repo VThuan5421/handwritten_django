@@ -15,4 +15,9 @@ A simple CNN (Convolutional Neural Network) predicts images containing handwritt
 6. **Run server**
 - python manage.py runserver
 #### Some images for predicting in the static/images folder. But you can load any image in google for prediction.
+
+https://user-images.githubusercontent.com/67046297/150619204-d0fc2b14-be76-4be4-962e-2f1d9298d3cc.mp4
+
 ![Screenshot](static/images/screen.jpg)
+
+
